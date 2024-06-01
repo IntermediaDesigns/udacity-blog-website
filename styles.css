@@ -43,6 +43,7 @@ color: #105b9c;
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
+    color: #105b9c;
 }
 
 .Navbar ul li a:hover {
@@ -55,3 +56,59 @@ color: #105b9c;
     height: 30px;
     cursor: pointer;
 }
+
+
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    font-family: 'Merriweather', serif;
+    box-shadow: 0 0 10px grey;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+}
+
+.footerLinks ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 25px;
+    margin-bottom: 1rem;
+}
+
+.footerLinks ul li a {
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: #105b9c;
+}
+
+.footerSocial {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 1rem;
+}
+
+.footerSocial ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.footerSocial ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #105b9c;
+}
+
+
