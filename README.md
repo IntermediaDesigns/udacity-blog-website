@@ -1,4 +1,4 @@
-# udacity-blog-website
+# Udacity Personal Blog Website
 
 # Getting Started
 
