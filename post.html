@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-    <header class="postHeader">
+    <div class="postHeader">
         <!-- Header content goes here -->
         <div class="searchContainer">
             <form action="/search" method="GET">
@@ -45,84 +45,119 @@
                 <button type="submit" value="Search">Search</button>
             </form>
         </div>
-    </header>
-    <main class="postMain">
-        <h1>Embracing the JAMstack: The Future of Web Development</h1>
-        <!-- Author Info goes here -->
-        <div class="authorContainer">
-            <img src="./images/avatar.jpg" alt="author">
-            <h2>John Doe</h2>
-            <p>Date: <span>June 2, 2024</span></p>
-        </div>
-        <!-- Social Sharing goes here -->
-        <div class="shareContainer">
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com/your-blog-post"
-                target="_blank" class="shareBtn">
-                Share on <img src="./images/fb.png" alt="facebook-share">
-            </a>
-
-            <!-- Twitter -->
-            <a href="https://twitter.com/share?url=https://yourwebsite.com/your-blog-post&text=Check out this blog post!"
-                target="_blank" class="shareBtn2">
-                Share on <img src="./images/x.png" alt="twitter-x-share">
-            </a>
-        </div>
-
-        <!-- Blog post content goes here -->
-        <div class="likes">
-            <button id="likeBtn"><img src="/images/heart.png" alt="like">Like</button>
-            <p id="likeCount">0 likes</p>
-        </div>
-
-        <div class="blogPostContainer">
-            <img src="./images/blog-img.jpg" alt="tech">
-            <p>In the ever-evolving landscape of web development, staying up-to-date with the latest technologies and trends is crucial. One such trend that has been gaining traction in recent years is the JAMstack.
-<br><br>
-                JAMstack stands for JavaScript, APIs, and Markup. It represents a modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup. The main idea behind JAMstack is to make the web faster, more secure, and easier to scale.
-                <br><br>
-                Unlike traditional web development architectures, where the frontend and backend are tightly coupled, JAMstack decouples them. This means you can develop your frontend and backend separately, making your development process more efficient and manageable.
-                <br><br>
-                JavaScript is used for dynamic functionalities, handling everything that happens on the client-side, in the browser. APIs (Application Programming Interfaces) are used for server-side operations and database actions. They provide a way for your client-side JavaScript to communicate with your server and database. Markup is the HTML content that is prebuilt at build time and served to the browser.
-                <br><br>
-                One of the main advantages of JAMstack is performance. Since your HTML is prebuilt, it can be served directly from a CDN (Content Delivery Network), reducing the time to first byte and ensuring a fast load time. Furthermore, since there is no dependence on a server, there is less risk of server-side issues slowing down your site or causing it to go down.
-                <br><br>
-                Security is another strong point of JAMstack. Since your site is made up of static files and APIs, it has a smaller attack surface compared to a traditional web app. Also, since your frontend and backend are decoupled, an issue in one will not affect the other.
-                <br><br>
-                In conclusion, JAMstack represents a powerful approach to web development that offers numerous benefits in terms of performance, security, and scalability. As we move forward, it’s clear that JAMstack will play a significant role in shaping the future of web development.</p>
-        </div>
-
-
-
-        <!-- Comments go here -->
-        <div>
-            <form action="/submit-comment" method="POST">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="comment">Comment:</label><br>
-                <textarea id="comment" name="comment"></textarea><br>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-        <!-- Subscribe -->
-        <div>
-            <form action="/subscribe" method="POST">
-                <input type="email" id="email" name="email" placeholder="Enter your email">
-                <input type="submit" value="Subscribe">
-            </form>
-        </div>
-
-        <!-- Related Posts go here -->
-        <div>
-            <h2>Related Posts</h2>
-            <div>
-                <h3>Related Post Title</h3>
-                <p>Related post content goes here</p>
+    </div>
+    <main>
+        <div class="postMain">
+            <h1>Embracing the JAMstack: The Future of Web Development</h1>
+            <!-- Author Info goes here -->
+            <div class="authorContainer">
+                <img src="./images/avatar.jpg" alt="author">
+                <h2>John Doe</h2>
+                <p>Date: <span>June 2, 2024</span></p>
             </div>
-            <div>
-                <h3>Related Post Title</h3>
-                <p>Related post content goes here</p>
+            <!-- Social Sharing goes here -->
+            <div class="shareContainer">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com/your-blog-post"
+                    target="_blank" class="shareBtn">
+                    Share on <img src="./images/fb.png" alt="facebook-share">
+                </a>
+
+                <!-- Twitter -->
+                <a href="https://twitter.com/share?url=https://yourwebsite.com/your-blog-post&text=Check out this blog post!"
+                    target="_blank" class="shareBtn2">
+                    Share on <img src="./images/x.png" alt="twitter-x-share">
+                </a>
             </div>
+
+            <!-- Blog post content goes here -->
+            <div class="likes">
+                <button id="likeBtn"><img src="/images/heart.png" alt="like">Like</button>
+                <p id="likeCount">0 likes</p>
+            </div>
+
+            <div class="blogPostContainer">
+                <img src="./images/blog-img.jpg" alt="tech">
+                <p>In the ever-evolving landscape of web development, staying up-to-date with the latest technologies
+                    and
+                    trends is crucial. One such trend that has been gaining traction in recent years is the JAMstack.
+                    <br><br>
+                    JAMstack stands for JavaScript, APIs, and Markup. It represents a modern web development
+                    architecture
+                    based on client-side JavaScript, reusable APIs, and prebuilt Markup. The main idea behind JAMstack
+                    is to
+                    make the web faster, more secure, and easier to scale.
+                    <br><br>
+                    Unlike traditional web development architectures, where the frontend and backend are tightly
+                    coupled,
+                    JAMstack decouples them. This means you can develop your frontend and backend separately, making
+                    your
+                    development process more efficient and manageable.
+                    <br><br>
+                    JavaScript is used for dynamic functionalities, handling everything that happens on the client-side,
+                    in
+                    the browser. APIs (Application Programming Interfaces) are used for server-side operations and
+                    database
+                    actions. They provide a way for your client-side JavaScript to communicate with your server and
+                    database. Markup is the HTML content that is prebuilt at build time and served to the browser.
+                    <br><br>
+                    One of the main advantages of JAMstack is performance. Since your HTML is prebuilt, it can be served
+                    directly from a CDN (Content Delivery Network), reducing the time to first byte and ensuring a fast
+                    load
+                    time. Furthermore, since there is no dependence on a server, there is less risk of server-side
+                    issues
+                    slowing down your site or causing it to go down.
+                    <br><br>
+                    Security is another strong point of JAMstack. Since your site is made up of static files and APIs,
+                    it
+                    has a smaller attack surface compared to a traditional web app. Also, since your frontend and
+                    backend
+                    are decoupled, an issue in one will not affect the other.
+                    <br><br>
+                    In conclusion, JAMstack represents a powerful approach to web development that offers numerous
+                    benefits
+                    in terms of performance, security, and scalability. As we move forward, it’s clear that JAMstack
+                    will
+                    play a significant role in shaping the future of web development.
+                </p>
+            </div>
+
+
+
+            <!-- Comments go here -->
+            <div class="commentSection">
+                <h2>Comments</h2>
+                <div class="commentForm">
+                    <form action="/submit-comment" method="POST">
+                        <label for="comment">Comment:</label><br>
+                        <textarea id="comment" name="comment"></textarea><br>
+                        <button type="submit" value="Submit">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Related Posts go here -->
+            <div class="relatedPosts">
+                <h2>Related Posts</h2>
+                <div>
+                    <h3>Related Post Title</h3>
+                    <p>Related post content goes here</p>
+                </div>
+                <div>
+                    <h3>Related Post Title</h3>
+                    <p>Related post content goes here</p>
+                </div>
+            </div>
+            <!-- Subscribe -->
+            <div class="subscribe">
+                <h2>Subscribe to our Newsletter</h2>
+                <form action="/subscribe" method="POST">
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <button type="submit" value="Subscribe">Subscribe</button>
+                </form>
+            </div>
+
 
     </main>
     <footer class="footer">
