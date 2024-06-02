@@ -187,6 +187,7 @@ main h1 {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .blogCard {
     display: flex;
     justify-content: center;
@@ -408,11 +409,9 @@ main h1 {
         display: none;
     }
 
-.dropdown-content img {
-    display: block;
-}
-
-
+    .dropdown-content img {
+        display: block;
+    }
 
     .menuBtn {
         display: block;
@@ -446,6 +445,7 @@ main h1 {
     .menuBtn {
         display: none;
     }
+
     .dropdown {
         display: none;
     }
@@ -455,7 +455,20 @@ main h1 {
     .menuBtn {
         display: none;
     }
+
     .dropdown {
         display: none;
     }
+}
+
+/* Post Page */
+.postHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    height: 210px;
+    width: 100%;
+    background-color: #00ffff11;
 }
