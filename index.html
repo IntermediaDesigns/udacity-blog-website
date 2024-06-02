@@ -8,8 +8,8 @@
 </head>
 
 <body>
-     <!-- Navbar goes here -->
-     <div class="Navbar">
+    <!-- Navbar goes here -->
+    <div class="Navbar">
         <div>
             <img class="logo" src="./images/logo.png" alt="">
         </div>
@@ -17,23 +17,28 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="./post.html">Blog Posts</a> </li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div>
             <img src="./images/dark.png" class="switch" alt="Switch Theme">
         </div>
+
+        <img src="./images/hamburger.png" alt="menu" class="menuBtn">
+
     </div>
     <header>
-       <div class="header">
-        <h1>Welcome to <br> <span>"Tech News"!</span></h1>
-        <h2>Your one-stop destination for the latest and greatest in the world of technology.</h2>
+        <div class="header">
+            <h1>Welcome to <br> <span>"Tech News"!</span></h1>
+            <h2>Your one-stop destination for the latest and greatest in the world of technology.</h2>
 
-        <p>Our blog is dedicated to providing you with up-to-date news, insightful analysis, and in-depth reviews on everything tech-related. From emerging startups to established tech giants, from the latest gadgets to groundbreaking software, we cover it all.</p>
-       </div>
+            <p>Our blog is dedicated to providing you with up-to-date news, insightful analysis, and in-depth reviews on
+                everything tech-related. From emerging startups to established tech giants, from the latest gadgets to
+                groundbreaking software, we cover it all.</p>
+        </div>
     </header>
     <main>
-        <h1>Blogs</h1>
+        <h1>Recent Blogs</h1>
         <!-- Blog Post Cards go here -->
         <div class="blogSection">
             <div class="blogCard">
@@ -54,11 +59,20 @@
                 <p>Blog Post Description</p>
                 <a href="./post.html">Read More</a>
             </div>
+            <div class="blogCard">
+                <img src="./images/placeholder.png" alt="tech">
+                <h2>Blog Post Title</h2>
+                <p>Blog Post Description</p>
+                <a href="./post.html">Read More</a>
+            </div>
+            <div>
+                <button class="arrowDown"><img src="./images/arrow.png" alt=""></button>
+            </div>
         </div>
 
         <!-- Contact Section -->
         <div class="contactSection">
-            <h2>Contact Us</h2>
+            <h2 id="contact">Contact Us</h2>
             <div class="contactContainer">
                 <form action="/contact" method="POST">
                     <label for="name">Name:</label><br>
@@ -78,7 +92,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="./post.html">Blog Posts</a> </li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div class="footerSocial">

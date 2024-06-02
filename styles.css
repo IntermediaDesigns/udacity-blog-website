@@ -57,6 +57,10 @@ color: #105b9c;
     cursor: pointer;
 }
 
+.menuBtn {
+    cursor: pointer;
+}
+
 /* Header */
 header {
     background-image: url('./images/header-bkg.jpg');
@@ -71,7 +75,7 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 0 2rem;
-    height: 700px;
+    height: 710px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.627);
 }
@@ -105,6 +109,14 @@ header {
 }
 
 /* Blog Card Section */
+main h1 {
+    font-size: 3rem;
+    margin: 2rem 0;
+    color: #105b9c;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
 .blogSection {
     display: flex;
     justify-content: center;
@@ -167,6 +179,31 @@ header {
     color: #105b9c;
 }
 
+/* Arrow Button */
+.arrowDown img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    background-color: transparent;
+    border: none;
+    filter: invert(100%);
+}
+
+.arrowDown {
+    padding: 5px 10px;
+    height: 60px;
+    width: 100px;
+    background-color: #105b9c;
+    border-radius: 20px;
+    box-shadow: 0 0 10px grey;
+    transition: transform 0.5s;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
 
 /* Contact Section */
@@ -176,8 +213,9 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 2rem;
-    height: 100vh;
+    height: 710px;
     width: 100%;
+    background-color: #00ffff11;
 }
 
 .contactSection h2 {
@@ -301,4 +339,48 @@ header {
     height: 40px;
 }
 
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .switch {
+        display: none;
+    }
 
+    .menuBtn {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    .Navbar ul {
+        display: none;
+    }
+
+    .Navbar {
+        justify-content: space-between;
+    }
+
+    .footerLinks ul {
+        gap: 25px;
+    }
+
+    .footerSocial ul {
+        gap: 25px;
+    }
+
+    .footerSocial img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .menuBtn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1558px) {
+    .menuBtn {
+        display: none;
+    }
+}
