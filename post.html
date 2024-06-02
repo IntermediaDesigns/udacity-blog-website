@@ -42,40 +42,54 @@
         <div class="searchContainer">
             <form action="/search" method="GET">
                 <input type="text" id="search" name="search" placeholder="Search...">
-                <input type="submit" value="Search">
+                <button type="submit" value="Search">Search</button>
             </form>
         </div>
-        <h1>Blog Post Title</h1>
     </header>
-    <main>
+    <main class="postMain">
+        <h1>Embracing the JAMstack: The Future of Web Development</h1>
         <!-- Author Info goes here -->
-        <div>
-            <div></div>
-            <div></div>
+        <div class="authorContainer">
+            <img src="./images/avatar.jpg" alt="author">
+            <h2>John Doe</h2>
+            <p>Date: <span>June 2, 2024</span></p>
         </div>
         <!-- Social Sharing goes here -->
-        <div>
+        <div class="shareContainer">
             <!-- Facebook -->
             <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com/your-blog-post"
-                target="_blank">
+                target="_blank" class="shareBtn">
                 Share on <img src="./images/fb.png" alt="facebook-share">
             </a>
 
             <!-- Twitter -->
             <a href="https://twitter.com/share?url=https://yourwebsite.com/your-blog-post&text=Check out this blog post!"
-                target="_blank">
+                target="_blank" class="shareBtn2">
                 Share on <img src="./images/x.png" alt="twitter-x-share">
             </a>
         </div>
 
         <!-- Blog post content goes here -->
-        <div><button id="like-button">Like</button>
-            <p id="like-count">0 likes</p>
+        <div class="likes">
+            <button id="likeBtn"><img src="/images/heart.png" alt="like">Like</button>
+            <p id="likeCount">0 likes</p>
         </div>
 
-        <div>
-            <h1>Blog Post Title</h1>
-            <p>Blog post content goes here</p>
+        <div class="blogPostContainer">
+            <img src="./images/blog-img.jpg" alt="tech">
+            <p>In the ever-evolving landscape of web development, staying up-to-date with the latest technologies and trends is crucial. One such trend that has been gaining traction in recent years is the JAMstack.
+<br><br>
+                JAMstack stands for JavaScript, APIs, and Markup. It represents a modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup. The main idea behind JAMstack is to make the web faster, more secure, and easier to scale.
+                <br><br>
+                Unlike traditional web development architectures, where the frontend and backend are tightly coupled, JAMstack decouples them. This means you can develop your frontend and backend separately, making your development process more efficient and manageable.
+                <br><br>
+                JavaScript is used for dynamic functionalities, handling everything that happens on the client-side, in the browser. APIs (Application Programming Interfaces) are used for server-side operations and database actions. They provide a way for your client-side JavaScript to communicate with your server and database. Markup is the HTML content that is prebuilt at build time and served to the browser.
+                <br><br>
+                One of the main advantages of JAMstack is performance. Since your HTML is prebuilt, it can be served directly from a CDN (Content Delivery Network), reducing the time to first byte and ensuring a fast load time. Furthermore, since there is no dependence on a server, there is less risk of server-side issues slowing down your site or causing it to go down.
+                <br><br>
+                Security is another strong point of JAMstack. Since your site is made up of static files and APIs, it has a smaller attack surface compared to a traditional web app. Also, since your frontend and backend are decoupled, an issue in one will not affect the other.
+                <br><br>
+                In conclusion, JAMstack represents a powerful approach to web development that offers numerous benefits in terms of performance, security, and scalability. As we move forward, it’s clear that JAMstack will play a significant role in shaping the future of web development.</p>
         </div>
 
 
