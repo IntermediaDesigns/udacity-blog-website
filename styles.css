@@ -87,6 +87,23 @@ color: #105b9c;
     color: #fff;
 }
 
+.dropdown-content div {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.dropdown-content div:hover {
+    background-color: #f1356d;
+    width: 100%;
+    
+}
+
+.dropdown-content img {
+    background-color: transparent;
+}
+
 #menuBtn:checked+.dropdown-content {
     display: block;
 }
@@ -391,6 +408,10 @@ main h1 {
     .switch {
         display: none;
     }
+
+.dropdown-content img {
+    display: block;
+}
 
 
 
