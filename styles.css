@@ -196,13 +196,14 @@ main h1 {
 
 .blogCard {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     padding: 1rem;
     margin: 1rem;
     width: 300px;
-    height: 400px;
+    height: auto;
+    min-height: 501px;
     border-radius: 10px;
     box-shadow: 0 0 10px grey;
     transition: transform 0.5s;
