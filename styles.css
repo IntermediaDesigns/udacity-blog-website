@@ -634,11 +634,10 @@ main h1 {
 }
 
 #likeBtn {
-    background-color: #105b9c;
     border-radius: 10px;
     padding: 5px 10px;
     cursor: pointer;
-    color: #fff;
+    color: #000000;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     display: flex;
@@ -649,7 +648,6 @@ main h1 {
 }
 
 #likeBtn:hover {
-    background-color: #f1356d;
     transform: scale(1.05);
 }
 
@@ -876,15 +874,15 @@ main h1 {
     align-items: center;
     flex-direction: column;
     background-color: #105b9c;
-    height: 260px;
+    height: 300px;
     width: 100%;
     margin-bottom: 140px;
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
 .subscribe h2 {
     font-size: 2rem;
-    margin: 1rem 0;
+    margin: 1rem 0 2rem 0;
     color: #fff;
     font-family: 'Merriweather', serif;
 }
