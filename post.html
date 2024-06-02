@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Blog Post</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <div class="Navbar">
@@ -23,14 +25,98 @@
             </div>
         </div>
         <!-- Header content goes here -->
+        <div>
+            <form action="/search" method="GET">
+                <input type="text" id="search" name="search" placeholder="Search...">
+                <input type="submit" value="Search">
+            </form>
+        </div>
     </header>
     <main>
         <!-- Author Info goes here -->
+        <div>
+            <div></div>
+            <div></div>
+        </div>
         <!-- Social Sharing goes here -->
+        <div>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com/your-blog-post"
+                target="_blank">
+                Share on <img src="./images/fb.png" alt="facebook-share">
+            </a>
+
+            <!-- Twitter -->
+            <a href="https://twitter.com/share?url=https://yourwebsite.com/your-blog-post&text=Check out this blog post!"
+                target="_blank">
+                Share on <img src="./images/x.png" alt="twitter-x-share">
+            </a>
+        </div>
+
         <!-- Blog post content goes here -->
+        <div><button id="like-button">Like</button>
+            <p id="like-count">0 likes</p>
+        </div>
+
+        <div>
+            <h1>Blog Post Title</h1>
+            <p>Blog post content goes here</p>
+        </div>
+
+        
+
+        <!-- Comments go here -->
+        <div>
+            <form action="/submit-comment" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="comment">Comment:</label><br>
+                <textarea id="comment" name="comment"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+<!-- Subscribe -->
+<div>
+    <form action="/subscribe" method="POST">
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <input type="submit" value="Subscribe">
+    </form>
+</div>
+
+        <!-- Related Posts go here -->
+        <div>
+            <h2>Related Posts</h2>
+            <div>
+                <h3>Related Post Title</h3>
+                <p>Related post content goes here</p>
+            </div>
+            <div>
+                <h3>Related Post Title</h3>
+                <p>Related post content goes here</p>
+            </div>
+
     </main>
-    <footer>
+    <footer class="footer">
         <!-- Footer content goes here -->
+        <div class="footerLinks">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./post.html">Blog Posts</a> </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footerSocial">
+            <ul>
+                <li><a href="https://www.facebook.com/TechNewsBlog"><img src="./images/fb.png" alt="facebook"></a></li>
+                <li><a href="https://www.twitter.com/TechNewsBlog"><img src="./images/x.png" alt="twitter-x"></a></li>
+                <li><a href="https://www.instagram.com/TechNewsBlog"><img src="./images/instagram.png"
+                            alt="instagram"></a></li>
+            </ul>
+        </div>
+        <div>
+            <p>&copy; 2024 Tech News. All rights reserved.</p>
+        </div>
     </footer>
 </body>
+
 </html>
