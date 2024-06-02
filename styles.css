@@ -286,6 +286,7 @@ main h1 {
     height: 710px;
     width: 100%;
     background-color: #00ffff11;
+    margin-bottom: 140px;
 }
 
 .contactSection h2 {
@@ -325,6 +326,10 @@ main h1 {
     background-color: #105b9c;
     color: #fff;
     cursor: pointer;
+}
+
+.contactContainer button:hover {
+    background-color: #f1356d;
 }
 
 .contactContainer input {
