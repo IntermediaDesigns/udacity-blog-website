@@ -8,9 +8,7 @@
 </head>
 
 <body>
-    
-    <header>
-        <!-- Navbar goes here -->
+    <!-- Navbar goes here -->
     <div class="Navbar">
         <div>
             <img class="logo" src="./images/logo.png" alt="">
@@ -30,13 +28,17 @@
             <label for="menuBtn" class="menu-btn"><img src="./images/hamburger.png" alt="menu" class="menuBtn"></label>
             <input type="checkbox" id="menuBtn" />
             <div class="dropdown-content">
+                <div>
+                    <img src="./images/dark.png" class="switch" alt="Switch Theme">
+                </div>
                 <a href="/index.html">Home</a>
                 <a href="/post.html">Blog Posts</a>
                 <a href="/index.html#contact">Contact</a>
             </div>
+        </div>
     </div>
-    
-    </div>
+    <header class="postHeader">
+
         <!-- Header content goes here -->
         <div>
             <form action="/search" method="GET">
@@ -76,7 +78,7 @@
             <p>Blog post content goes here</p>
         </div>
 
-        
+
 
         <!-- Comments go here -->
         <div>
@@ -88,13 +90,13 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
-<!-- Subscribe -->
-<div>
-    <form action="/subscribe" method="POST">
-        <input type="email" id="email" name="email" placeholder="Enter your email">
-        <input type="submit" value="Subscribe">
-    </form>
-</div>
+        <!-- Subscribe -->
+        <div>
+            <form action="/subscribe" method="POST">
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
 
         <!-- Related Posts go here -->
         <div>
