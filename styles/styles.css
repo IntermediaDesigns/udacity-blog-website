@@ -189,6 +189,13 @@ main h1 {
     height: auto;
 }
 
+figcaption {
+    font-size: smaller;
+    color: #f1356d;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
 /* Blog Card */
 .blogCardContainer {
     display: flex;

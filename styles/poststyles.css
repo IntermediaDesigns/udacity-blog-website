@@ -244,12 +244,19 @@
     margin-bottom: 3rem;
 }
 
-.blogPostContainer img {
+.figureImg img {
     width: 100%;
     max-width: 900px;
     max-height: 400px;
     border-radius: 10px;
     object-fit: cover;
+}
+
+.figureImg figcaption {
+    font-size: smaller;
+    color: #f1356d;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 .blogPostContainer h1 {
@@ -277,6 +284,21 @@
 
 .blogPostContainer a:hover {
     color: #105b9c;
+}
+
+blockquote {
+    font-size: 1rem;
+    color: #133f69;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    max-width: 600px;
+}
+
+small {
+    font-size: small;
+    color: #133f69;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
 
 /* Related Posts */
