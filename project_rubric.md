@@ -18,7 +18,7 @@
 
 - Files are organized with a directory structure that separates files based on page and functionality.
 - The main index.html page should be in the directory's root.
-- All static assets should be placed in a folder called static/ or assets/.
+- All static images should be placed in a folder called static/ or images/.
 
 #### Links
 

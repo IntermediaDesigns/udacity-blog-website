@@ -7,7 +7,7 @@
     padding: 2rem;
     height: 100px;
     width: 100%;
-    background-image: url('./assets/header-bkg.jpg');
+    background-image: url('/images/header-bkg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -205,10 +205,27 @@
 }
 
 /* Blog Post */
+.postGrid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 100%;
+    min-height: 2200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .postMain {
-    height: 100vh;
-    padding: 0 0 2rem 0;
-    /* Change this line */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 3rem;
+    padding: 2rem;
+}
+
+.postMain h1 {
+    word-wrap: wrap;
+    max-width: 600px;
 }
 
 .blogPostContainer {
@@ -262,17 +279,106 @@
     color: #105b9c;
 }
 
-/* Comments */
-.commentSection {
+/* Related Posts */
+.blogSection {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.blogSection h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #105b9c;
+    font-family: 'Merriweather', serif;
+}
+
+/* Related Blog Posts Card */
+.relatedCardContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.relatedCard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
-    background-color: #00ffff11;
-    height: 400px;
+    padding: 1rem;
+    width: 250px;
+    height: auto;
+    min-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+    transition: transform 0.5s;
+}
+
+.relatedCard:hover {
+    transform: scale(1.05);
+}
+
+.relatedCard img {
     width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.relatedCard h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #105b9c;
+    font-family: 'Merriweather', serif;
+}
+
+.relatedCard p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: #105b9c;
+    font-family: 'Roboto', sans-serif;
+}
+
+.relatedCard a {
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: #f1356d;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.relatedCard a:hover {
+    color: #105b9c;
+}
+
+/* Comments */
+.commentsGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
     padding: 2rem;
-    /* Add padding here */
+    width: 100%;
+    height: auto;
+    background-color: #00ffff26;
+    min-height: fit-content;
+}
+
+.commentSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: transparent;
+    height: auto;
 }
 
 .commentSection h2 {
@@ -293,6 +399,17 @@
     box-shadow: 0 0 10px grey;
     padding: 2rem;
     border-radius: 10px;
+}
+
+.commentForm label {
+    font-size: 1rem;
+    color: #105b9c;
+    font-family: 'Roboto', sans-serif;
+}
+
+.commentForm textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
 }
 
 .commentForm form {
@@ -330,24 +447,61 @@
     resize: vertical;
 }
 
-/* Related Posts */
-.blogSection h2 {
-    font-size: 2rem;
-    margin: 1rem 0;
-    color: #105b9c;
-    font-family: 'Merriweather', serif;
-}
-
-/* Subscribe */
-.subscribe {
+.recentCommentSection {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background-color: #105b9c;
-    height: 60%;
     width: 100%;
-    padding: 3rem;
+    background-color: transparent;
+    height: auto;
+    min-height: fit-content;
+}
+
+.recentCommentSection h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #105b9c;
+    font-family: 'Merriweather', serif;
+    background-color: transparent;
+}
+
+.recentCommentsBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 0 10px grey;
+    border-radius: 10px;
+    height: auto;
+
+}
+
+.recentComments {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.recentComments p {
+    font-size: 1rem;
+    color: #105b9c;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+
+/* Subscribe */
+.subscribe {
+    background-color: #105b9c;
+    height: 450px;
+    width: 100%;
+    padding: 2rem;
 }
 
 .subscribeCard {
@@ -355,13 +509,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
     max-width: 500px;
-    height: 300px;
     box-shadow: 0 0 10px grey;
-    padding: 3rem;
+    padding: 2rem 3rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px grey;
+margin-left: auto;
+    margin-right: auto;
 }
 
 .subscribeCard h2 {

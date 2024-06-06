@@ -1,0 +1,117 @@
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .switch {
+    display: none;
+  }
+
+  .dropdown-content img {
+    display: block;
+  }
+
+  .menuBtn {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+
+  .Navbar ul {
+    display: none;
+  }
+
+  .Navbar {
+    justify-content: space-between;
+  }
+
+  .footerLinks ul {
+    gap: 25px;
+  }
+
+  .footerSocial ul {
+    gap: 25px;
+  }
+
+  .footerSocial img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .postGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 2rem auto;
+    width: fit-content;
+  }
+
+  .postMain {
+    padding: 0;
+    margin: 1rem auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .postMain h1 {
+    font-size: x-large;
+    width: 300px;
+  }
+
+  .postMain p {
+    font-size: medium;
+    width: fit-content;
+  }
+
+  .shareContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .likes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+}
+
+  .commentsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .subscribe h2 {
+    font-size: x-large;
+  }
+
+  .subscribe p {
+    font-size: medium;
+  }
+  .subscribe form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .menuBtn {
+    display: none;
+  }
+
+  .dropdown {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 2057px) {
+  .menuBtn {
+    display: none;
+  }
+
+  .dropdown {
+    display: none;
+  }
+}
