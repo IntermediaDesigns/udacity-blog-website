@@ -207,7 +207,8 @@
 /* Blog Post */
 .postMain {
     height: 100vh;
-    padding: 0 0 2rem 0; /* Change this line */
+    padding: 0 0 2rem 0;
+    /* Change this line */
 }
 
 .blogPostContainer {
@@ -215,7 +216,8 @@
     align-items: center;
     flex-direction: column;
     gap: 1rem;
-    padding: 2rem; /* Add padding here */
+    padding: 2rem;
+    /* Add padding here */
     width: 100%;
     max-width: 1000px;
     box-shadow: 0 0 10px grey;
@@ -269,7 +271,8 @@
     background-color: #00ffff11;
     height: 400px;
     width: 100%;
-    padding: 2rem; /* Add padding here */
+    padding: 2rem;
+    /* Add padding here */
 }
 
 .commentSection h2 {
@@ -338,24 +341,37 @@
 /* Subscribe */
 .subscribe {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     background-color: #105b9c;
-    height: 300px;
+    height: 60%;
     width: 100%;
-    margin-bottom: 140px;
-    padding: 0 2rem;
+    padding: 3rem;
 }
 
-.subscribe h2 {
+.subscribeCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    box-shadow: 0 0 10px grey;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+}
+
+.subscribeCard h2 {
     font-size: 2rem;
-    margin: 1rem 0 2rem 0;
-    color: #fff;
+    margin: 0 0 2rem 0;
+    color: #000000;
     font-family: 'Merriweather', serif;
 }
 
-.subscribe form {
+.subscribeCard form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,15 +380,15 @@
     max-width: 500px;
 }
 
-.subscribe input {
+.subscribeCard input {
     padding: 5px 10px;
     font-size: 1rem;
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
-    border: none;
+    border: 1px solid #105b9c;
 }
 
-.subscribe button {
+.subscribeCard button {
     padding: 5px 10px;
     font-size: 1rem;
     border-radius: 5px;
@@ -383,7 +399,7 @@
     color: #fff;
 }
 
-.subscribe button:hover {
+.subscribeCard button:hover {
     background-color: #00ffff;
     color: #000000;
 }
